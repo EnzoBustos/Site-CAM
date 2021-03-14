@@ -8,6 +8,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #4d4643;
@@ -116,12 +117,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu > ul {
   display: flex;
+  align-items: center;
 }
 
 .nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
-  padding: 10px 0 10px 28px;
+  padding: 10px;
 }
 
 .nav-menu a {
@@ -522,7 +524,7 @@ h1, h2, h3, h4, h5, h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 60px 0;
+  padding-bottom:30px;
   overflow: hidden;
 }
 
@@ -532,14 +534,14 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding:30px 15px;
 }
 
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin: 20px;
   padding-bottom: 20px;
   position: relative;
 }
@@ -614,12 +616,12 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
+/*------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  padding: 70px 20px 80px 20px;
+  padding:10px;
   transition: all ease-in-out 0.3s;
   background: #fff;
 }
@@ -636,7 +638,7 @@ section {
 }
 
 .services .icon-box .icon i {
-  font-size: 36px;
+  font-size: 25px;
   transition: 0.5s;
   position: relative;
 }
@@ -653,9 +655,9 @@ section {
 }
 
 .services .icon-box h4 {
-  font-weight: 600;
-  margin: 10px 0 15px 0;
-  font-size: 22px;
+  font-weight: 600px;
+  margin: 10px;
+  font-size: 18px;
 }
 
 .services .icon-box h4 a {
@@ -664,9 +666,7 @@ section {
 }
 
 .services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
-  margin-bottom: 0;
+  font-size: 10px;
 }
 
 .services .icon-box:hover {
@@ -886,12 +886,16 @@ section {
 /*--------------------------------------------------------------
 # About Us
 --------------------------------------------------------------*/
+.about-us{
+  height: 100vh;
+}
+
 .about-us .content h2 {
   font-weight: 700;
-  font-size: 42px;
+  font-size: 32px;
   line-height: 60px;
   margin-bottom: 20px;
-  text-transform: uppercase;
+
 }
 
 .about-us .content h3 {
