@@ -74,7 +74,6 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 #header .logo {
@@ -117,7 +116,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu > ul {
   display: flex;
-  align-items: center;
 }
 
 .nav-menu > ul > li {
@@ -132,12 +130,12 @@ h1, h2, h3, h4, h5, h6 {
   color: #111;
   transition: 0.3s;
   font-size: 13px;
-  text-transform: uppercase;
+  text-transform:uppercase  ;
   font-weight: 600;
   font-family: "Roboto", sans-serif;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+.nav-menu a:hover, .nav-menu .active > a, .nav-m    enu li:hover > a {
   color: #9f0000  ;
 }
 
