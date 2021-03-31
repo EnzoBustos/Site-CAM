@@ -28,7 +28,9 @@
 
   <!-- Fonts Awesome icons-->
   <script src="https://kit.fontawesome.com/cdd01f6b83.js" crossorigin="anonymous"></script>
+  
   <link href="/fontawesome-free-5.14.0-web/css/all.css" rel="stylesheet">
+
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -90,7 +92,7 @@
             <div class="carousel-content animate__animated animate__fadeInUp">
               <h2>Semana de Engenharia de Movimento</h2>
               <p>A Semana de Engenharia de Movimento é um evento acadêmico anual, com duração de 5 dias, que busca complementar a formação do estudante, promovendo o contato entre aluno e empresa</p>
-              <div class="text-center"><a href="http://cam.poli.usp.br/semov/" class="btn-get-started">Read More</a></div>
+              <div class="text-center"><a href="http://cam.poli.usp.br/semov/" class="btn-get-started">Leia Mais</a></div>
             </div>
           </div>
         </div>
@@ -102,7 +104,7 @@
               <h2>Reforma do CAM</h2>
               <p>Ajude seu Centro Acadêmico a ficar de cara nova. Nova pintura, mais sofas, jurema organizada, nova bancada e até mesa de sinuca!!</p>
             <p>Acesse o link da vaquinha e contribua. Toda ajuda é bem vinda! </p>
-              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+              <div class="text-center"><a href="" class="btn-get-started">Leia Mais</a></div>
             </div>
           </div>
         </div>
@@ -117,7 +119,7 @@
                 O Centro Acadêmico Mecânica e Mecatrônica orgulhosamente apresenta:
                 <br><br>
                 ✶ X CAM RODEO FESTIVAL ✶</p>
-              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+              <div class="text-center"><a href="" class="btn-get-started">Leia Mais</a></div>
             </div>
           </div>
         </div>
@@ -131,7 +133,7 @@
                 O Jornal  O Corvo é uma Gazeta composta de contos, artigos e editoriais, todos eles escritos por estudantes de Mecânica e Mecatrônica</p>
               <p> Quer publicar o sua matéria? Acesse o link e contribua com esse projeto incrível!                
               </p>
-              <div class="text-center"><a href="" class="btn-get-started">Read More</a></div>
+              <div class="text-center"><a href="" class="btn-get-started">Leia Mais</a></div>
             </div>
           </div>
         </div>
@@ -195,7 +197,7 @@
           <h2>Passei, e agora ?</h2>
           <p> Parabéns, agora você faz parte da melhor faculdade da América Latina
               <br>
-              Seu primeiro ano será fantástico e cheio de experiências novas, para ajudá-l@ confira algumas funções para te ajudar:
+              Seu primeiro ano será fantástico e cheio de experiências novas, para ajudá-lo confira algumas funções para te ajudar:
           </p>
         </div>
 
@@ -210,6 +212,7 @@
               </div>
               <h4><a href="https://www.poli.usp.br/">Sua Faculdade</a></h4>
               <p id="margin-facul">Confira algumas informações sobre sua faculdade </p>
+              
             </div>
           </div>
 
@@ -221,10 +224,16 @@
                 </svg>
                 <i class="icofont-school-bag"></i>
               </div>
-              <h4><a href="">Seu curso</a></h4>
+              <h4 onclick="PopUp()" style="cursor: pointer;">Seu Curso</h4>
+              <script>
+                function PopUp(){
+                  document.getElementById("pop-up-curso").style.display='block';
+                }                  
+              </script>
               <p>Conheça um pouco mais sobre seu curso e quais matérias você terá</p>
             </div>
           </div>
+          
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div class="icon-box iconbox-pink">
@@ -247,7 +256,7 @@
                 </svg>
                 <i class="icofont-ui-social-link"></i>
               </div>
-              <h4><a href="">Siga-nos nas redes</a></h4>
+              <h4><a href=#footer>Siga-nos nas redes</a></h4>
               <p>Siga o CAM no Instagram e o adicione em seu Facebook para ficar por dentro dos eventos</p>
             </div>
           </div>
@@ -260,7 +269,7 @@
                 </svg>
                 <i class="far fa-newspaper"></i>
               </div>
-              <h4><a href="">O Corvo</a></h4>
+              <h4><a href="https://www.facebook.com/jornalOCorvo">O Corvo</a></h4>
               <p>Conheça o jornal da mecânica e mecatrônica e contribua com sua matéria</p>
             </div>
           </div>
@@ -273,7 +282,7 @@
                 </svg>
                 <i class="fas fa-bullhorn"></i>
               </div>
-              <h4><a href="">CCO</a></h4>
+              <h4><a href="https://docs.google.com/forms/d/e/1FAIpQLSeNfi275rYsvzaKjUxyquoWC8_cVoaXRIztEKAP9Q-5caRqNA/viewform">CCO</a></h4>
               <p>Se você se sentiu oprimido, desconfortável ou discriminado;
                 mande uma mensagem anônima para a Comissão Contra Opressão</p>
             </div>
@@ -282,7 +291,28 @@
         </div>
 
       </div>
+      <div id="pop-up-curso" class="Pop-up-curso">
+        <h1><a onClick="Close()" style="cursor: pointer;">X</a></h1>
+        <div class="Pop-up-content row">
+          <div class="col-lg-12">
+            <h2>Qual seu curso ?</h2>
+          </div>
+          <div class="col-lg-6 ">
+            <a href="http://www.pme.poli.usp.br/"><h5>Mecânica</h5></a>
+          </div>
+          <div class="col-lg-6"> 
+            <a href="http://www.pmr.poli.usp.br/"><h5>Mecatrônica</h5></a>
+          </div>
+        </div>
+      </div>
+      <script>
+        function Close(){
+          document.getElementById("pop-up-curso").style.display = "none";
+        }
+      </script>
+      
     </section><!-- End Services Section -->
+    
 
         <!-- ======= Integra ======= -->
         <section id="about-us" class="about-us-footer">
