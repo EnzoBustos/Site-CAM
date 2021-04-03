@@ -2275,16 +2275,26 @@ section {
   z-index: 500000;
   align-items: center;
   text-align: center;
-  height: 30vh;
-  width: 22vw;
+  height: auto;
+  width: auto;
   position:fixed;
   bottom:25vh;
-  left: 38.5vw;
+  align-items: center;
   border-radius: 1em;
   display: none;
+  opacity: 0.8;
+  left:30vw; 
 }
 
 .Pop-up-content{
-  margin-top: 5vh;
+
+  padding: 2vh;
   color: white;
+}
+
+.Categorias{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 35px 0px 10px 0px;
 }
