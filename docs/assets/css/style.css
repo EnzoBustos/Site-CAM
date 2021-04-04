@@ -890,7 +890,7 @@ section {
 }
 .about-us-footer{
 
-  height: 120vh;
+  height: 100vh;
 
 }
 
@@ -2297,4 +2297,10 @@ section {
   display: flex;
   justify-content: space-around;
   margin: 35px 0px 10px 0px;
+}
+
+.alinhamento{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

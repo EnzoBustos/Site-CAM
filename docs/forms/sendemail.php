@@ -1,23 +1,23 @@
 <?php
-$name = @trim(stripslashes($_POST['name'])); 
-$from = @trim(stripslashes($_POST['email'])); 
-$subject = @trim(stripslashes($_POST['subject'])); 
-$message = @trim(stripslashes($_POST['message'])); 
-$to = "marcosmulari@usp.br";
 
-$mensaje = "Nome: $name \nEmail: $from \nAssunto: $subject \nMensagem: $message";
+    $para = "seuemail@email.com";
+    $name = $_POST['message'];
+    $email = $_POST['email'];
+    $subject = $_POST['subject'];
+    $message = $_POST['message'];
+    $mensagem = "Nome: $name<br>";
+    $mensagem .= "Email: $email<br>";
+    $mensagem .= "Assunto: $subject<br>";
+    $mensagem .= "Mensagem: $message<br>";
+    $headers = 'From: '.$email."\r\n". 'Reply-To: '.$email."\r\n";
+    $headers .= "MIME-Version: 1.0\r\n";
+    $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
-$pagetitle = "Nova mensagem do site";
+    if (mail($para, $subject, $mensagem, $headers)){
+        echo "Sua mensagem foi enviada com sucesso!";
+    }
+    else{
+        echo "Aconteceu um erro, tente novamente mais tarde.";
+    }
 
-$headers = array();
-$headers = "MIME-Version: 1.0";
-$headers = "Content-type: text/plain; charset=\"utf-8\"\n";
-$headers = "From: {$name} <{$from}>";
-$headers = "Reply-To: <{$from}>";
-$headers = "Subject: {$subject}";
-$headers = "X-Mailer: PHP/".phpversion();
-$headers = implode("\r\n", $headers);
-
-mail($to, $pagetitle, $mensaje, $headers);
-
-die();
+?>
