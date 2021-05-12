@@ -23,7 +23,7 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, {
+h1, h2, h3, h4, h5, h6{
   font-family: "Roboto", sans-serif;
 }
 
@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6, {
 # 
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background: #111;
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6, {
 .nav-menu a {
   display: block;
   position: relative;
-  color: #111;
+  color:#fff;
   transition: 0.3s;
   font-size: 16px;
   text-transform: uppercase;
@@ -137,6 +137,7 @@ h1, h2, h3, h4, h5, h6, {
 }
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+  
   color: #9f0000  ;
 }
 
