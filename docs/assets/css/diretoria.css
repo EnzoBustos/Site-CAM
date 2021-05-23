@@ -8,7 +8,10 @@
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
     position: relative;
     background: #fff;
+    
   }
+
+  
   
   .diretoria .diretoria-item .diretoria-img {
     width: 90px;
@@ -48,7 +51,7 @@
     top: 10px;
   }
   
-  .diretoria .diretoria-item p {
+  .diretoria .diretoria-item p{
     font-style: italic;
     margin: 15px 0 0 0;
     padding: 0;
