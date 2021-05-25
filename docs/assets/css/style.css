@@ -523,7 +523,20 @@ h1, h2, h3, h4, h5, h6{
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+.section2 {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  
+}
+.section3 {
+  height: 100vh;
+  display: block;
+  align-items: center;
+  
+}
 section {
+  
   padding:30px;
   overflow: hidden;
 }
