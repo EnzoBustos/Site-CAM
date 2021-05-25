@@ -1,0 +1,35 @@
+.about-us{
+    height: auto;
+    text-align: center;
+}
+.about-us-footer{
+    height: auto;
+
+}
+.img-integra {
+    height: 90vw;
+}
+body{
+    text-align: center;
+}
+.space {
+    padding: 2em;
+}
+.img-hist{
+    height: 45vw;
+}
+.section-title{
+    padding: 0 5px;
+
+}
+.diretoria .diretoria-item {
+    height: auto;
+    
+}
+.diretoria .diretoria-item .diretoria-img{
+    float: none;
+
+}
+section{
+    padding:10px;
+}
