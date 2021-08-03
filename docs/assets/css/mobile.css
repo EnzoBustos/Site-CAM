@@ -19,7 +19,7 @@ body{
     height: 45vw;
 }
 .section-title{
-    padding: 2rem 0px;
+    padding: 1rem 0px;
 
 }
 .diretoria .diretoria-item {
@@ -77,4 +77,13 @@ section{
 }
 .welcome h2{
     font-size: 1rem;
+}
+.section-title h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    text-transform: uppercase;    
+    position: relative;
+}
+.about-us .content h2 {
+    display: none;
 }
